@@ -1,0 +1,17 @@
+name: DeathCost
+main: com.PizzaParrot.DeathCost.DeathCost
+description: Removes money when you die!
+author: PizzaParrot
+version: 1.0.0
+depend:
+- Vault
+
+commands:
+  deathcost:
+    description: DeathCost main command
+    usage: /<command>
+    aliases: [dc, dcost]
+
+permissions:
+  deathcost.admin:
+    default: op

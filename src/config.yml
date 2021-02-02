@@ -1,0 +1,15 @@
+###----------------------------------------------------------###
+#               DeathCost v1.0.0 by PizzaParrot
+###----------------------------------------------------------###
+# Whether the plugin is enabled.
+enabled: true
+# The value of the death cost.
+death-cost: 10
+# Toggles whether the death cost should be taken as a percentage.
+# death-cost values of 100 or higher will take ALL of the player's
+# money upon death if this option is enabled.
+is-percent: true
+# Whether to enable messages.
+enable-message: true
+# Message displayed on death.
+message: '&cYou have died and lost &a$%amount%&c!'
