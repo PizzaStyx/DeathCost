@@ -2,6 +2,7 @@ package com.PizzaParrot.DeathCost;
 
 import java.text.DecimalFormat;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -37,6 +38,12 @@ public class PlayerDeathListener implements Listener
         
         if (player.hasPermission("deathcost.exempt")) return;
             
+        if (cost < 0)
+        {
+        	Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.RED + "[DeathCost] Invalid value for death cost! Please check your config!");
+        	return;
+        }
+        
         if (enablePercent)
         {
             double balance = eco.getBalance(player);
